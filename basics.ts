@@ -18,19 +18,19 @@ isInstructor = false;
 let hobbies: string[];
 hobbies = ['Reading', 'Watching Movies'];
 
-let person: {
-  name: string;
-  age: number;
-};
-person = {
-  name: 'Paul',
-  age: 36,
-};
+// let person: {
+//   name: string;
+//   age: number;
+// };
+// person = {
+//   name: 'Paul',
+//   age: 36,
+// };
 
-let people: {
-  name: string;
-  age: number;
-}[];
+// let people: {
+//   name: string;
+//   age: number;
+// }[];
 
 // Type inferance
 
@@ -41,3 +41,19 @@ let people: {
 
 let course: string | number = 'React - The Complete Guide';
 course = 12345;
+
+// Type Aliases
+
+type Person = {
+  name: string;
+  age: number;
+};
+
+let person: Person;
+
+person = {
+  name: 'Paul',
+  age: 36,
+};
+
+let people: Person[];
