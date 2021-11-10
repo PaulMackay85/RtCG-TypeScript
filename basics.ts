@@ -31,3 +31,9 @@ let people: {
   name: string;
   age: number;
 }[];
+
+
+// Type inferance
+
+let course = "React - The Complete Guide";
+// course = 12345; - Cannot now be set to a number from a string.
